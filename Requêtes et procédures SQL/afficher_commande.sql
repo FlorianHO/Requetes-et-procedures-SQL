@@ -1,0 +1,1 @@
+SELECT Commande.id_commande, reference_commande, date_livraison_prevue, date_emission, total_article, montant_total_HT,montant_total_TVA,montant_total_TTC,Commande.id_client, designation, couleur,client_nom,client_prenom from Commande INNER JOIN Article on Article.id_commande = Commande.id_commande INNER JOIN Client on Commande.id_client = Client.id_client
